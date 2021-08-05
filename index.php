@@ -1,29 +1,3 @@
-﻿<?php
-$myArray = array();
-$file = fopen("name.txt", "r");
-
-while (!feof($file)) {
-   $line = fgets($file);
-   $myArray[] = explode(', ', $line);
-}
-
-$arrayLength=count($myArray);
-$i=0; 
-while($i < $arrayLength-1) {  
-$voiceName = (string)$myArray[$i][0];
-$userID = isset($myArray[$i][1]) ? $myArray[$i][1] : null;
-
-
-$voiceAddress = "/files/".(string)$voiceName."voice.ogg";
-$voiceInTable= "<audio controls><source src=$voiceAddress type=\"audio/mpeg\"></audio>";
-echo "<table><tr><th>$userID</td><th><center>$voiceInTable</center></th></tr></table>";
-
-?>
-<?php $i++; } 
-fclose($file);
-?>
-
-
 <?php 
 include("Telegram.php");
 // Set the bot TOKEN
@@ -74,9 +48,6 @@ file_put_contents('files/'.$file_name.'voice.ogg',file_get_contents($full_path))
   
 $id=$message->from->username;
 
-$myfile = fopen("name.txt", "a+") or die("Unable to open file!");
-fwrite($myfile, $file_name.", "."@".$id."\n");
-fclose($myfile);
 
   $content = ['chat_id' =>$chat_id, 'action' => 'typing'];
   $telegram->sendChatAction($content);
