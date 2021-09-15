@@ -30,7 +30,7 @@ $message = $update->message;
 	             $telegram->sendChatAction($content);
                  
 	    
-	             $content = array('chat_id' => $chat_id  ,'text' => 'لینک سایت : https://test01bot.000webhostapp.com ' );
+	             $content = array('chat_id' => $chat_id  ,'text' => 'لینک سایت : https://voice-dict.herokuapp.com/ ' );
 	             $telegram->sendMessage($content);
 	
 	
