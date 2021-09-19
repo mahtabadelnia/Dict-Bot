@@ -5,7 +5,7 @@ $bot_id = "1821998766:AAFC33-G_KDLtoHvvm5tBBWjMvzsGY0925o";
 // Instances the class
 $telegram = new Telegram($bot_id);
 
-
+echo "Hello world!";
 // Take text and chat_id from the message
 $text 			  = $telegram->Text();
 $chat_id 		  = $telegram->ChatID();
