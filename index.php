@@ -6,9 +6,7 @@ try{
 	echo "DB connected :D";
 }catch(PDOException $e){
 	//error text info
-	echo $e.getMessage();
-	//error array
-	print_r($e.errorInfo());
+	echo("khar shod:(");
 	}
 include("Telegram.php");
 // Set the bot TOKEN
