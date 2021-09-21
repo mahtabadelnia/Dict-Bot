@@ -1,4 +1,15 @@
 <?php 
+try{
+	$connection = new PDO("mysql:host=ec2-34-228-154-153.compute-1.amazonaws.com;dbname=
+	d9uhuugvncjmvg","
+	yhpgwjrdhfcobl","8b5aa7e994d61210f6a7f62dbe92e39a0d224e94ebe41dbf2930aad5b193579b");
+	echo "DB connected :D"
+}catch(PDOException $e){
+	//error text info
+	echo $e.getMessage();
+	//error array
+	print_r($e.errorInfo());
+	}
 include("Telegram.php");
 // Set the bot TOKEN
 $bot_id = "1821998766:AAFC33-G_KDLtoHvvm5tBBWjMvzsGY0925o";
