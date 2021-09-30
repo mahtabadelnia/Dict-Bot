@@ -6,7 +6,7 @@ try{
 	echo "DB connected :D";
 }catch(PDOException $e){
 	//error text info
-	echo("khar shod:(")
+	echo("khar shod:(");
 	}
 include("Telegram.php");
 // Set the TOKEN
