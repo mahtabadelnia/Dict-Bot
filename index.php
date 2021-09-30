@@ -9,7 +9,7 @@ try{
 	echo("khar shod:(");
 	}
 include("Telegram.php");
-// Set the bot TOKEN
+// Set the TOKEN
 $bot_id = "2012348496:AAEy_yGRRJXd29tCQCTE2opnHCkAkJQN5lY";
 // Instances the class
 $telegram = new Telegram($bot_id);
