@@ -1,5 +1,5 @@
 <?php 
-try{
+/*try{
 	$connection = new PDO("mysql:host=ec2-34-228-154-153.compute-1.amazonaws.com;dbname=
 	d9uhuugvncjmvg","
 	yhpgwjrdhfcobl","8b5aa7e994d61210f6a7f62dbe92e39a0d224e94ebe41dbf2930aad5b193579b");
@@ -7,7 +7,7 @@ try{
 }catch(PDOException $e){
 	//error text info
 	echo("khar shod:(");
-	}
+	}*/
 include("Telegram.php");
 // Set the TOKEN
 $bot_id = "2012348496:AAHXJnqsnyXy0zrxqqVm1CmF9C13afPxBK4";
