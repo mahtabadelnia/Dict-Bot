@@ -10,7 +10,7 @@ try{
 	}
 include("Telegram.php");
 // Set the TOKEN
-$bot_id = "2012348496:AAEy_yGRRJXd29tCQCTE2opnHCkAkJQN5lY";
+$bot_id = "2012348496:AAHXJnqsnyXy0zrxqqVm1CmF9C13afPxBK4";
 // Instances the class
 $telegram = new Telegram($bot_id);
 
